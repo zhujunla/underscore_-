@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var _ = {};
+    //创建向左或向右迭代的归约函数。
+
+    _.find = _.detect = function (obj, predicate, context) {
+      var keyFinder = isArrayLike(obj) ? _.findIndex : _.findKey;
+      var key = keyFinder(obj, predicate, context);
+      if (key !== void 0 && key !== -1) return obj[key];
+    };
+  </script>
+</body>
+
+</html>
