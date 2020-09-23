@@ -20,7 +20,7 @@ var arrayfind = function(list, iteratee, context){
  for(var i = 0;i < list.length;i++){
    var v = list[i];
    var val = iteratee(v, i, list);
-   if(val) arr.push[v];
+   if(val) arr.push(v);
    continue;
  }
  return getLength(arr) === 0 ? -1 : arr;
@@ -43,7 +43,7 @@ var objFind = function(list, iteratee, context){
    var val = findKeys(list, iteratee, context);
    if( val !== -1) return val
  }
- var aa = filter({a:1,b:2,c:3,d:4},function(val, index, list){
-   return val %2 !== 0;
- })
- console.info(aa)
+//  var aa = filter({a:1,b:2,c:3,d:4},function(val, index, list){
+//    return val %2 !== 0;
+//  })
+//  console.info(aa)
